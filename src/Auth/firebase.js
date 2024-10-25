@@ -1,4 +1,5 @@
 import { initializeApp } from "firebase/app";
+import { getAuth, createUserWithEmailAndPassword } from "firebase/auth";
 const {
   VITE_DRIVEHUB_apiKey,
   VITE_DRIVEHUB_authDomain,
@@ -18,5 +19,5 @@ const firebaseConfig = {
   measurementId: VITE_DRIVEHUB_measurementId,
 };
 const app = initializeApp(firebaseConfig);
-export { app, firebaseConfig };
-console.log(app, firebaseConfig);
+const auth = getAuth();
+export { app, auth, createUserWithEmailAndPassword };

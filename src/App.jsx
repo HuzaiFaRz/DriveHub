@@ -1,12 +1,16 @@
-import { firebaseConfig } from "./Auth/firebase";
-import "./Auth/firebase";
-
+import { Fragment } from "react";
+import LocomotiveScroll from "locomotive-scroll";
+import SignUp from "./Auth/SignUp";
 const App = () => {
-  console.log(firebaseConfig.apiKey);
+  new LocomotiveScroll();
 
-  console.log(import.meta.env);
-
-  return <div>App</div>;
+  return (
+    <Fragment>
+      <main className="Main">
+        <SignUp />
+      </main>
+    </Fragment>
+  );
 };
 
 export default App;
