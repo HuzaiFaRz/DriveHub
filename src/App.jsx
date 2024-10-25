@@ -1,9 +1,12 @@
-import React from 'react'
+import { firebaseConfig } from "./Auth/firebase";
+import "./Auth/firebase";
 
 const App = () => {
-  return (
-    <div>App</div>
-  )
-}
+  console.log(firebaseConfig.apiKey);
 
-export default App
+  console.log(import.meta.env);
+
+  return <div>App</div>;
+};
+
+export default App;
