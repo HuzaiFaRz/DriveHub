@@ -1,5 +1,6 @@
 import { initializeApp } from "firebase/app";
 import { getAuth, createUserWithEmailAndPassword } from "firebase/auth";
+
 const {
   VITE_DRIVEHUB_apiKey,
   VITE_DRIVEHUB_authDomain,
